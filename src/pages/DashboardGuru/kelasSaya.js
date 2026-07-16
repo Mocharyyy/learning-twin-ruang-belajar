@@ -10,7 +10,7 @@ export default function kelasSaya() {
 
 <div>
 
-<h1 class="text-5xl font-bold text-slate-800">
+<h1 class="text-4xl font-bold text-slate-800">
 Kelas Saya
 </h1>
 
