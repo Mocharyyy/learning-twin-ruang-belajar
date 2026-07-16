@@ -7,8 +7,8 @@ import navbar from "./components/Navbar/navbar";
 import methodSelection from "./pages/methodSelection";
 
 AOS.init({
-  once: true,
-  duration: 800,
+    once: true,
+    duration: 800,
 });
 
 document.querySelector("#app").innerHTML = `
@@ -16,27 +16,36 @@ ${navbar()}
 ${methodSelection()}
 `;
 
-const cards = document.querySelectorAll(".method-card");
+// =========================
+// PILIH SATU METODE SAJA
+// =========================
+
+const methods = document.querySelectorAll(".method-card");
 const text = document.getElementById("selectedMethod");
+const nextBtn = document.getElementById("nextBtn");
 
-cards.forEach(card=>{
+methods.forEach(method => {
 
-card.addEventListener("click",()=>{
+    method.addEventListener("click", () => {
 
-card.classList.toggle("active");
+        // hapus pilihan sebelumnya
+        methods.forEach(m => m.classList.remove("active"));
 
-const active=document.querySelectorAll(".method-card.active");
+        // aktifkan yang dipilih
+        method.classList.add("active");
 
-if(active.length==0){
+        // ubah text
+        text.innerHTML = `
+            Metode dipilih :
+            <b>${method.querySelector("h3").innerText}</b>
+        `;
 
-text.innerHTML="Pilih minimal satu metode belajar";
+        // aktifkan tombol lanjut
+        nextBtn.classList.remove(
+            "opacity-50",
+            "pointer-events-none"
+        );
 
-}else{
-
-text.innerHTML=`${active.length} metode dipilih`;
-
-}
-
-});
+    });
 
 });

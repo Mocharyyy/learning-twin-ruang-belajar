@@ -3,61 +3,39 @@ export default function sidebar() {
 
 <aside class="w-[250px] min-h-screen bg-[#CFCFCF] border-r border-gray-400">
 
-    <!-- Header -->
     <div class="px-6 py-6">
 
-        <h2 class="text-xl font-semibold text-gray-800">
+        <h2 class="text-xl font-semibold">
             Dashboard
         </h2>
 
-        <p class="text-sm text-gray-600 mt-1">
+        <p class="text-sm text-gray-600">
             Guru
         </p>
 
     </div>
 
-    <!-- Menu -->
     <nav class="px-4 mt-4 space-y-3">
 
-        <a href="#" class="flex items-center gap-3 bg-white border-2 border-black rounded-lg px-4 py-2 text-sm font-medium shadow-sm">
+        <button id="menu-ringkasan" class="dashboard-menu w-full">
+            📊 Ringkasan
+        </button>
 
-            <span>📊</span>
+        <button id="menu-kelas" class="dashboard-menu w-full">
+            📚 Kelas Saya
+        </button>
 
-            <span>Ringkasan</span>
+        <button id="menu-siswa" class="dashboard-menu w-full">
+            👨‍🎓 Data Siswa
+        </button>
 
-        </a>
+        <button id="menu-bank" class="dashboard-menu w-full">
+            📝 Bank Soal
+        </button>
 
-        <a href="#" class="flex items-center gap-3 bg-white hover:bg-gray-100 rounded-lg px-4 py-2 text-sm transition">
-
-            <span>📚</span>
-
-            <span>Kelas Saya</span>
-
-        </a>
-
-        <a href="#" class="flex items-center gap-3 bg-white hover:bg-gray-100 rounded-lg px-4 py-2 text-sm transition">
-
-            <span>👨‍🎓</span>
-
-            <span>Data Siswa</span>
-
-        </a>
-
-        <a href="#" class="flex items-center gap-3 bg-white hover:bg-gray-100 rounded-lg px-4 py-2 text-sm transition">
-
-            <span>📝</span>
-
-            <span>Bank Soal</span>
-
-        </a>
-
-        <a href="#" class="flex items-center gap-3 bg-white hover:bg-gray-100 rounded-lg px-4 py-2 text-sm transition">
-
-            <span>📈</span>
-
-            <span>Laporan</span>
-
-        </a>
+        <button id="menu-laporan" class="dashboard-menu w-full">
+            📈 Laporan
+        </button>
 
     </nav>
 

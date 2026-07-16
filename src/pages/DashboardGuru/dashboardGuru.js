@@ -1,49 +1,43 @@
-import sidebar from "./sidebar.js";
-import topbar from "./topbar.js";
-import statistics from "./statistics.js";
-import kelasHariIni from "./kelasHariIni.js";
-import perhatian from "./perhatian.js";
+import sidebar from "./sidebar";
+import topbar from "./topbar";
+import statistics from "./statistics";
+import kelasHariIni from "./kelasHariIni";
+import perhatian from "./perhatian";
 
 export default function dashboardGuru() {
   return `
-
 <section class="min-h-screen bg-[#F5F7FB]">
 
-<div class="flex">
+    <div class="flex">
 
-    ${sidebar()}
+        ${sidebar()}
 
-    <main class="flex-1">
+        <main class="flex-1">
 
-        ${topbar()}
+            ${topbar()}
 
-        <div class="px-8 py-6">
+            <div id="dashboardContent" class="px-8 py-6">
 
-            ${statistics()}
+                ${statistics()}
 
-            <div class="grid grid-cols-3 gap-6 mt-6">
+                <div class="grid grid-cols-3 gap-6 mt-6">
 
-                <div class="col-span-2">
+                    <div class="col-span-2">
+                        ${kelasHariIni()}
+                    </div>
 
-                    ${kelasHariIni()}
-
-                </div>
-
-                <div>
-
-                    ${perhatian()}
+                    <div>
+                        ${perhatian()}
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
+        </main>
 
-    </main>
-
-</div>
+    </div>
 
 </section>
-
 `;
 }

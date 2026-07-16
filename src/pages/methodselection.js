@@ -11,7 +11,7 @@ Pilih Metode Belajar
 </h1>
 
 <p class="text-slate-500 mt-2">
-Setiap metode bisa dikombinasikan. Pilih metode belajar yang paling sesuai.
+Pilih satu metode belajar yang paling sesuai.
 </p>
 
 <div class="grid md:grid-cols-3 gap-8 mt-10">
@@ -86,13 +86,18 @@ Latihan soal dengan penilaian otomatis dan AI adaptif.
 
 <div class="flex justify-between items-center mt-10">
 
-<p id="selectedMethod" class="text-slate-500">
-Pilih minimal satu metode belajar
-</p>
+    <p id="selectedMethod" class="text-slate-500">
+        Pilih satu metode belajar
+    </p>
 
-<a href="/dashboard.html" class="btn-primary">
-Mulai Belajar →
-</a>
+    <a
+        id="nextBtn"
+        href="/dashboard.html"
+        class="btn-primary opacity-50 pointer-events-none">
+
+        Mulai Belajar →
+
+    </a>
 
 </div>
 

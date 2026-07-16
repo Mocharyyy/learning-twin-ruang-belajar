@@ -80,13 +80,18 @@ Pilih satu atau lebih mata pelajaran yang ingin dipelajari.
 
 <div class="flex justify-between items-center mt-10">
 
-<p id="selectedSubject" class="text-slate-500">
-Pilih minimal 1 mata pelajaran
-</p>
+    <p id="selectedSubject" class="text-slate-500">
+        Pilih satu mata pelajaran
+    </p>
 
-<a href="/method.html" class="btn-primary">
-Lanjut ke Metode Belajar →
-</a>
+    <a
+        id="nextBtn"
+        href="/method.html"
+        class="btn-primary opacity-50 pointer-events-none">
+
+        Lanjut ke Metode Belajar →
+
+    </a>
 
 </div>
 

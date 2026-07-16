@@ -16,27 +16,32 @@ ${navbar()}
 ${subjectSelection()}
 `;
 
-const cards = document.querySelectorAll(".subject-card");
+const subjects = document.querySelectorAll(".subject-card");
 const text = document.getElementById("selectedSubject");
+const nextBtn = document.getElementById("nextBtn");
 
-cards.forEach(card => {
+subjects.forEach(subject => {
 
-card.addEventListener("click",()=>{
+    subject.addEventListener("click", () => {
 
-card.classList.toggle("active");
+        // hapus semua pilihan
+        subjects.forEach(s => s.classList.remove("active"));
 
-const active=document.querySelectorAll(".subject-card.active");
+        // aktifkan pilihan baru
+        subject.classList.add("active");
 
-if(active.length===0){
+        // ubah tulisan
+        text.innerHTML = `
+            Mata pelajaran dipilih :
+            <b>${subject.querySelector("h3").innerText}</b>
+        `;
 
-text.innerHTML="Pilih minimal 1 mata pelajaran";
+        // aktifkan tombol
+        nextBtn.classList.remove(
+            "opacity-50",
+            "pointer-events-none"
+        );
 
-}else{
-
-text.innerHTML=`${active.length} Mata Pelajaran Dipilih`;
-
-}
-
-});
+    });
 
 });
