@@ -1,39 +1,41 @@
-export default function aksiCepat(){
+export default function aksiCepat() {
+  return `
 
-return `
+<section class="bg-white rounded-xl border border-slate-200 shadow-sm">
 
-<div class="bg-white rounded-3xl shadow-md p-8">
+    <div class="px-6 py-4 border-b">
 
-<h2 class="text-xl font-bold mb-6">
+        <h2 class="text-lg font-bold">
 
-Aksi Cepat
+            Aksi Cepat
 
-</h2>
+        </h2>
 
-<div class="space-y-4">
+    </div>
 
-<button class="w-full py-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition">
+    <div class="p-5 space-y-3">
 
-Tambah Sekolah
+        <button class="w-full py-3 rounded-lg border hover:bg-slate-50 transition">
 
-</button>
+            + Tambah Sekolah
 
-<button class="w-full py-3 rounded-xl bg-green-600 text-white hover:bg-green-700 transition">
+        </button>
 
-Tambah Guru
+        <button class="w-full py-3 rounded-lg border hover:bg-slate-50 transition">
 
-</button>
+            + Tambah Guru
 
-<button class="w-full py-3 rounded-xl bg-yellow-400 text-slate-900 hover:bg-yellow-500 transition">
+        </button>
 
-Buat Laporan
+        <button class="w-full py-3 rounded-lg border hover:bg-slate-50 transition">
 
-</button>
+            📄 Generate Laporan
 
-</div>
+        </button>
 
-</div>
+    </div>
+
+</section>
 
 `;
-
 }

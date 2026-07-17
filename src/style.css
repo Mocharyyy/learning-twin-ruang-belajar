@@ -815,3 +815,69 @@ to{
 }
 
 }
+
+@import "tailwindcss";
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#60A5FA;
+    border-radius:999px;
+}
+
+body{
+    margin:0;
+    font-family:Inter, sans-serif;
+    background:#F1F5F9;
+}
+
+button{
+    cursor:pointer;
+}
+
+.admin-menu{
+    width:100%;
+    height:44px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:0 14px;
+
+    border:1px solid #CBD5E1;
+    border-radius:10px;
+
+    background:#fff;
+
+    font-size:15px;
+    font-weight:500;
+    color:#334155;
+
+    transition:.25s;
+    cursor:pointer;
+}
+
+.admin-menu:hover{
+    background:#EFF6FF;
+    border-color:#60A5FA;
+    color:#2563EB;
+}
+
+.admin-menu.active{
+    background:#2563EB;
+    border-color:#2563EB;
+    color:#fff;
+}
+
+.menu-icon{
+    width:16px;
+    height:16px;
+
+    border:2px solid currentColor;
+    border-radius:4px;
+
+    flex-shrink:0;
+}

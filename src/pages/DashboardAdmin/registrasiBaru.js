@@ -1,71 +1,77 @@
-export default function registrasiBaru(){
+export default function registrasiBaru() {
+  return `
+<section class="bg-white rounded-xl border border-slate-200 shadow-sm">
 
-const data=[
+    <div class="px-6 py-4 border-b">
 
-["Ronaldo","Siswa","SMAN 1 Portugal","11 Juni","Aktif"],
+        <h2 class="text-xl font-bold text-slate-800">
+            Registrasi Baru
+        </h2>
 
-["Messi","Siswa","SMAN 3 Portugal","11 Juni","Verifikasi"],
+    </div>
 
-["Wibowo","Guru","SMK 1 Sultan Agung","1 Juli","Aktif"]
+    <div class="p-5">
 
-];
+        <table class="w-full text-sm">
 
-return `
+            <thead class="text-slate-500">
 
-<div class="bg-white rounded-3xl shadow-md p-8">
+                <tr class="border-b">
 
-<h2 class="text-2xl font-bold mb-6">
+                    <th class="text-left py-3">Nama</th>
+                    <th class="text-left">Peran</th>
+                    <th class="text-left">Sekolah</th>
+                    <th class="text-left">Terdaftar</th>
+                    <th class="text-left">Status</th>
 
-Registrasi Baru
+                </tr>
 
-</h2>
+            </thead>
 
-<table class="w-full text-sm">
+            <tbody>
 
-<thead>
+                <tr class="border-b">
 
-<tr class="border-b">
+                    <td class="py-4 font-medium">Ronaldo</td>
+                    <td>Siswa</td>
+                    <td>SMAN 1 Portugal</td>
+                    <td>11 Juni</td>
+                    <td class="text-green-600 font-semibold">
+                        Aktif
+                    </td>
 
-<th class="text-left pb-3">Nama</th>
+                </tr>
 
-<th>Peran</th>
+                <tr class="border-b">
 
-<th>Sekolah</th>
+                    <td class="py-4 font-medium">Messi</td>
+                    <td>Siswa</td>
+                    <td>-</td>
+                    <td>11 Juni</td>
+                    <td class="text-blue-600 font-semibold">
+                        Verifikasi
+                    </td>
 
-<th>Terdaftar</th>
+                </tr>
 
-<th>Status</th>
+                <tr>
 
-</tr>
+                    <td class="py-4 font-medium">Wibowo</td>
+                    <td>Guru</td>
+                    <td>SMK 1 Sultan Agung</td>
+                    <td>1 Juli</td>
+                    <td class="text-green-600 font-semibold">
+                        Aktif
+                    </td>
 
-</thead>
+                </tr>
 
-<tbody>
+            </tbody>
 
-${data.map(item=>`
+        </table>
 
-<tr class="border-b">
+    </div>
 
-<td class="py-4">${item[0]}</td>
-
-<td class="text-center">${item[1]}</td>
-
-<td class="text-center">${item[2]}</td>
-
-<td class="text-center">${item[3]}</td>
-
-<td class="text-center">${item[4]}</td>
-
-</tr>
-
-`).join("")}
-
-</tbody>
-
-</table>
-
-</div>
-
+</section>
 `;
-
 }

@@ -9,11 +9,11 @@ export default function navbar() {
 <div class="flex items-center gap-3">
 
 <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-bold">
-LT
+RB
 </div>
 
 <span class="font-semibold text-xl">
-Learning Twin by Ruang Belajar
+Smart Learning by Ruang Belajar
 </span>
 
 </div>

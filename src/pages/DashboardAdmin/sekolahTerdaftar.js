@@ -1,83 +1,62 @@
-export default function sekolahTerdaftar(){
+export default function sekolahTerdaftar() {
+  return `
+<section class="bg-white rounded-xl border border-slate-200 shadow-sm">
 
-const sekolah=[
+    <div class="px-6 py-4 border-b">
+        <h2 class="text-xl font-bold text-slate-800">
+            Sekolah Terdaftar
+        </h2>
+    </div>
 
-{
-nama:"SMPN 1 Nusua",
-negara:"Rusia",
-guru:36,
-siswa:713,
-status:"Aktif"
-},
+    <div class="p-5 space-y-4">
 
-{
-nama:"SMAN 3 Portugal",
-negara:"Portugal",
-guru:41,
-siswa:400,
-status:"Aktif"
-},
+        <div class="flex justify-between items-center bg-slate-50 rounded-lg p-4">
 
-{
-nama:"SMK 1 Meksiko",
-negara:"Meksiko",
-guru:31,
-siswa:290,
-status:"Uji Coba"
-}
+            <div>
+                <h3 class="font-semibold">SMPN 1 Rusia</h3>
+                <p class="text-sm text-slate-500">
+                    Rusia • 34 Guru • 313 Siswa
+                </p>
+            </div>
 
-];
+            <span class="px-4 py-1 rounded-full bg-green-100 text-green-700 text-sm font-semibold">
+                Aktif
+            </span>
 
-return `
+        </div>
 
-<div class="bg-white rounded-3xl shadow-md p-8">
+        <div class="flex justify-between items-center bg-slate-50 rounded-lg p-4">
 
-<h2 class="text-2xl font-bold">
+            <div>
+                <h3 class="font-semibold">SMAN 3 Portugal</h3>
+                <p class="text-sm text-slate-500">
+                    Portugal • 41 Guru • 400 Siswa
+                </p>
+            </div>
 
-Sekolah Terdaftar
+            <span class="px-4 py-1 rounded-full bg-green-100 text-green-700 text-sm font-semibold">
+                Aktif
+            </span>
 
-</h2>
+        </div>
 
-<div class="space-y-5 mt-6">
+        <div class="flex justify-between items-center bg-slate-50 rounded-lg p-4">
 
-${sekolah.map(item=>`
+            <div>
+                <h3 class="font-semibold">SMK 1 Meksiko</h3>
+                <p class="text-sm text-slate-500">
+                    Meksiko • 31 Guru • 290 Siswa
+                </p>
+            </div>
 
-<div class="flex justify-between items-center border rounded-2xl p-5">
+            <span class="px-4 py-1 rounded-full bg-yellow-100 text-yellow-700 text-sm font-semibold">
+                Uji Coba
+            </span>
 
-<div>
+        </div>
 
-<h3 class="font-bold">
+    </div>
 
-${item.nama}
-
-</h3>
-
-<p class="text-slate-500">
-
-${item.negara} • ${item.guru} Guru • ${item.siswa} Siswa
-
-</p>
-
-</div>
-
-<span class="${
-item.status=="Aktif"
-?"bg-green-100 text-green-700"
-:"bg-yellow-100 text-yellow-700"
-} px-5 py-2 rounded-full text-sm font-semibold">
-
-${item.status}
-
-</span>
-
-</div>
-
-`).join("")}
-
-</div>
-
-</div>
-
+</section>
 `;
-
 }

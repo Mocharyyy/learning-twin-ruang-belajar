@@ -1,69 +1,71 @@
-export default function statusSistem(){
+export default function statusSistem() {
+  return `
 
-return `
+<section class="bg-white rounded-xl border border-slate-200 shadow-sm">
 
-<div class="bg-white rounded-3xl shadow-md p-8">
+    <div class="px-6 py-4 border-b">
 
-<h2 class="text-xl font-bold">
+        <h2 class="text-lg font-bold text-slate-800">
 
-Status Sistem
+            Status Sistem
 
-</h2>
+        </h2>
 
-<div class="space-y-4 mt-6">
+    </div>
 
-<div class="flex justify-between">
+    <div class="p-5 space-y-4">
 
-<span>API Server</span>
+        <div class="flex justify-between items-center">
 
-<span class="text-green-600">
+            <span>API Server</span>
 
-Normal
+            <span class="text-green-600 font-semibold">
 
-</span>
+                ● Normal
 
-</div>
+            </span>
 
-<div class="flex justify-between">
+        </div>
 
-<span>AI Engine</span>
+        <div class="flex justify-between items-center">
 
-<span class="text-green-600">
+            <span>AI Engine</span>
 
-Normal
+            <span class="text-green-600 font-semibold">
 
-</span>
+                ● Normal
 
-</div>
+            </span>
 
-<div class="flex justify-between">
+        </div>
 
-<span>Database</span>
+        <div class="flex justify-between items-center">
 
-<span class="text-green-600">
+            <span>Database</span>
 
-Normal
+            <span class="text-green-600 font-semibold">
 
-</span>
+                ● Normal
 
-</div>
+            </span>
 
-<div class="flex justify-between">
+        </div>
 
-<span>CDN Video</span>
+        <div class="flex justify-between items-center">
 
-<span class="text-yellow-600">
+            <span>CDN Video</span>
 
-Lambat
+            <span class="text-yellow-500 font-semibold">
 
-</span>
+                ● Lambat
 
-</div>
+            </span>
 
-</div>
+        </div>
 
-</div>
+    </div>
+
+</section>
 
 `;
-
 }

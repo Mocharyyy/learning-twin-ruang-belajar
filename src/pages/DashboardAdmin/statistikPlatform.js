@@ -1,57 +1,73 @@
-export default function statistikPlatform(){
+export default function statistikPlatform() {
+  return `
+<section class="bg-white rounded-xl border border-slate-200 shadow-sm">
 
-const progress=[
+    <div class="px-5 py-4 border-b">
 
-["Penggunaan Metode Teks","68"],
+        <h2 class="font-bold text-lg">
+            Statistik Platform
+        </h2>
 
-["Penggunaan Quiz","53"],
+    </div>
 
-["Penggunaan Video","47"]
+    <div class="p-5 space-y-5">
 
-];
+        <div>
 
-return `
+            <div class="flex justify-between text-sm mb-2">
 
-<div class="bg-white rounded-3xl shadow-md p-8">
+                <span>Penggunaan Metode Teks</span>
 
-<h2 class="text-xl font-bold">
+                <span>60%</span>
 
-Statistik Platform
+            </div>
 
-</h2>
+            <div class="w-full bg-slate-200 rounded-full h-2">
 
-<div class="space-y-5 mt-6">
+                <div class="bg-blue-600 h-2 rounded-full w-[60%]"></div>
 
-${progress.map(item=>`
+            </div>
 
-<div>
+        </div>
 
-<div class="flex justify-between text-sm mb-2">
+        <div>
 
-<span>${item[0]}</span>
+            <div class="flex justify-between text-sm mb-2">
 
-<span>${item[1]}%</span>
+                <span>Penggunaan Quiz</span>
 
-</div>
+                <span>80%</span>
 
-<div class="w-full h-3 bg-slate-200 rounded-full">
+            </div>
 
-<div
-class="bg-blue-600 h-3 rounded-full"
-style="width:${item[1]}%">
+            <div class="w-full bg-slate-200 rounded-full h-2">
 
-</div>
+                <div class="bg-green-500 h-2 rounded-full w-[80%]"></div>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-`).join("")}
+        <div>
 
-</div>
+            <div class="flex justify-between text-sm mb-2">
 
-</div>
+                <span>Penggunaan Video</span>
 
+                <span>45%</span>
+
+            </div>
+
+            <div class="w-full bg-slate-200 rounded-full h-2">
+
+                <div class="bg-yellow-400 h-2 rounded-full w-[45%]"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 `;
-
 }

@@ -1,45 +1,65 @@
-export default function statistics(){
+export default function statistics() {
+  return `
 
-const data=[
+<div class="grid grid-cols-4 gap-6">
 
-["14.872","Total Pengguna"],
+<div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
 
-["54","Sekolah Terdaftar"],
+<div class="w-10 h-10 rounded bg-slate-200 mb-4"></div>
 
-["2.840","Konten Tersedia"],
-
-["98,2rb","Quiz Diselesaikan"]
-
-];
-
-return`
-
-<div class="grid grid-cols-4 gap-6 mt-8">
-
-${data.map(item=>`
-
-<div class="bg-white rounded-3xl shadow-md p-6">
-
-<div class="w-8 h-8 bg-slate-200 rounded mb-4"></div>
-
-<h2 class="text-3xl font-bold text-blue-600">
-
-${item[0]}
-
+<h2 class="text-3xl font-bold">
+14.872
 </h2>
 
 <p class="text-slate-500 mt-2">
-
-${item[1]}
-
+Total Pengguna
 </p>
 
 </div>
 
-`).join("")}
+<div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+
+<div class="w-10 h-10 rounded bg-slate-200 mb-4"></div>
+
+<h2 class="text-3xl font-bold">
+54
+</h2>
+
+<p class="text-slate-500 mt-2">
+Sekolah Terdaftar
+</p>
+
+</div>
+
+<div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+
+<div class="w-10 h-10 rounded bg-slate-200 mb-4"></div>
+
+<h2 class="text-3xl font-bold">
+2.840
+</h2>
+
+<p class="text-slate-500 mt-2">
+Konten Tersedia
+</p>
+
+</div>
+
+<div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+
+<div class="w-10 h-10 rounded bg-slate-200 mb-4"></div>
+
+<h2 class="text-3xl font-bold">
+98.2rb
+</h2>
+
+<p class="text-slate-500 mt-2">
+Quiz Diselesaikan
+</p>
+
+</div>
 
 </div>
 
 `;
-
 }
